@@ -1,0 +1,112 @@
+*{list-style-type: none;}
+.text-success{color:#2e7e40}
+.pad{padding-left: 10px;}
+
+
+/* ............................... Header ............................... */
+
+.header-dashboard{justify-content: space-between;position: fixed;background-color: black;width: 100%;z-index: 1000;}
+.header-dashboard ul li{padding: 10px 20px;}
+.header-dashboard .rightBox{justify-content: end;}
+
+
+
+
+/* ............................... Side Bar ............................... */
+
+.side-bar{padding: 10px;background-color: white;overflow-y: scroll;position: fixed;top: 61px;height: 90vh;transform: translate(-100%,0%);transition: 0.5s;}
+.side-bar ul li{padding: 10px 10px!important;}
+
+
+.dropDown .fa-caret-right{float: right;}
+.dropDown:hover{background-color: #cfcaca;}
+
+.iconBox1{height: 114px;}
+
+.box4{background-color: #f5f5f5;border: 1px solid black;position: fixed;bottom: 0%;left: 0%;width: 16.66%;display: flex;padding: 20px;}
+.box4 .iconBox{display: flex;justify-content: center;align-items: center;}
+.box4 .iconBox i{padding: 10px;border:2px solid black;border-radius: 20px;}
+.box4 .textBox{margin-left: 30px;line-height: 20px;}
+
+
+
+
+/* ............................... Main ............................... */
+
+
+.main{position: relative;top: 61px;padding: 20px;background-color: #f5f5f5;height: fit-content;padding-bottom: 0px;}
+.main .fieldsetBox{width: 47%;border: 1px solid black;padding: 10px;position: relative;margin-top: 10px;border-radius: 10px;}
+.main .fieldsetBox .fieldtext{font-size: 12px;position: absolute;background-color: #f5f5f5;top: -14%;padding: 0px 5px;}
+.main .fieldsetBox .textBox{margin: 10px 10px;}
+.main .fieldsetBox .textBox i{float: right;margin: 5px;}
+
+
+.dataBlocks{margin: 20px 0px;}
+.boxIcon{background-color: white;padding: 10px!important;border-radius: 5px;display: flex;justify-content: space-between;}
+.radius1{border-left: 5px solid #6a0dea;}
+.radius2{border-left: 5px solid #ffb300;}
+.radius3{border-left: 5px solid #9c27b0;}
+.radius4{border-left: 5px solid #26a69a;}
+
+.boxIcon .textBox{line-height: 20px;}
+.boxIcon .textBox p{font-size: 12px;color: #9c9c9c;}
+.boxIcon .iconBox{display: flex;justify-content: space-between;align-items: center;}
+.boxIcon .iconBox .fa-download{padding: 15px;border-radius: 70px;background-color: #6a0dea ;color: white;}
+.boxIcon .iconBox .fa-store{padding: 15px;border-radius: 70px;background-color: #ffb300 ;color: white;}
+.boxIcon .iconBox .fa-user-friends{padding: 15px;border-radius: 70px;background-color: #9c27b0 ;color: white;}
+.boxIcon .iconBox .fa-tv{padding: 15px;border-radius: 100px;background-color: #26a69a ;color: white;}
+
+
+/* ............................... Graphs ............................... */
+
+.graphs{height: fit-content;}
+
+
+/* ............................... bar graph ............................... */
+
+.graphs .firstBox{background-color: white;border-radius: 10px;}
+.graphtext{border-bottom: 1px solid #cfcaca;}
+.graphs .barIcon i{color:#6200ea}
+.secondBox{background-color: white;border-radius: 10px;position: relative;}
+.hov{color: #6200ea;font-size: 20px;font-weight: 600;position: relative;bottom: 0%;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.hov p{margin: auto 0px;}
+.hov:hover{background-color: #cfcaca;}
+.secondBox .hov{position: absolute;bottom: 0%;width: 100%;}
+
+/* ............................... graph ends ............................... */
+
+
+
+
+/* ............................... banners ............................... */
+
+
+.banner{margin-top: 30px;}
+
+.banner .leftBox{background-color: white;border-radius: 10px;}
+
+.shield{position: relative;width: fit-content;}
+.shield .fa-shield-alt{font-size: 100px; color: #6200ea;}
+.shield .fa-lock{color: #9c9c9c;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 30px;}
+
+.banner .rightBox{background-color: white;border-radius: 10px;}
+.banner .rightBox .bar{background-color: #9c9c9c;}
+.banner .rightBox .filledBar{background-color: #6200ea;height: 4px;width: 30%;}
+.banner .row{padding: 10px 0px;}
+
+
+/* ............................... Order Tables ............................... */
+
+.orderTable{background-color: white;border-radius: 10px;margin: 30px 10px;margin: 30px 15px;overflow: hidden;}
+.firstRow{padding: 10px;border-bottom: 1px solid #cfcaca;}
+.tableLegend .box{padding: 10px 20px;border-radius: 10px;border: 1px solid #cfcaca;width: fit-content;}
+
+
+
+
+
+/* ............................... Footer ............................... */
+
+.footer{border: 1px solid #cfcaca;height: 114px;}
+.footer .row{width: 100%;}
+.footer a{color: #9c27b0;text-decoration: none;}

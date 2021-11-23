@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Additional Files/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="Additional Files/Jquery/jquery-3.6.0.min.js"></script>
+    <script async src="app.js"></script>
+    <link rel="stylesheet" href="Additional Files/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="Additional Files/bootstrap-5.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-dark text-light">
+        <div class="row  header-dashboard ">
+            <div class="col-3">
+                <ul class="d-flex leftBox">
+                    <li><i class="fas fa-bars" id="fa-bars"></i></li>
+                    <li> Material Admin Pro</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="d-flex rightBox">
+                    <li>Overview</li>
+                    <li>Docuentation</li>
+                    <li><i class="far fa-envelope"></i></li>
+                    <li><i class="fas fa-bell"></i></li>
+                    <li><i class="fas fa-user"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 side-bar" id="side-bar">
+
+                <div class="box1">
+                    <h4>Interface</h4>
+
+                    <ul class="pad">
+                        <li class="dropDown"><i class="fas fa-globe"></i> Overview
+                        </li>
+                        <li class="dropDown" id="drop1"><i class="fas fa-columns"></i> Dashboard <i
+                                class="fas fa-caret-right"></i>
+                        </li>
+                        <li class="dropDown" id="drop2"><i class="fas fa-desktop"></i> Layouts <i
+                                class="fas fa-caret-right"></i>
+                        </li>
+                        <li class="dropDown" id="drop3"><i class="fas fa-layer-group"></i> Pages <i
+                                class="fas fa-caret-right"></i>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+
+                <div class="box2">
+                    <h4>UI Toolkit</h4>
+
+
+                    <ul class="pad">
+                        <li class="dropDown"><i class="fas fa-th"></i> Component
+                        </li>
+                        <li class="dropDown"><i class="fas fa-archive"></i> Content<i class="fas fa-caret-right"></i>
+                        </li>
+                        <li class="dropDown"><i class="fab fa-wpforms"></i> Forms<i class="fas fa-caret-right"></i>
+                        </li>
+                        <li class="dropDown"><i class="fas fa-wrench"></i> Utilities<i class="fas fa-caret-right"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="box3">
+                    <h4>Plugins</h4>
+
+
+                    <ul class="pad">
+                        <li><i class="fas fa-chart-bar"></i> Charts
+                        </li>
+                        <li><i class="fas fa-code"></i> Code Blocks</i>
+                        </li>
+                        <li><i class="fas fa-database"></i> Data Tables</i>
+                        </li>
+                        <li><i class="far fa-calendar-alt"></i> Date Picker</i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+
+                    <div class="iconBox1">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="box4">
+
+                <div class="iconBox">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="textBox">
+                    <p class="text">Login as:</p>
+                    <p class="heading">Start Bootstrap</p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="main col-12" id="main">
+
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <h4>Dashboard</h4>
+                        <p class="maintext">Sales Overview & Summary</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-between">
+                        <div class="fieldsetBox">
+                            <p class="fieldtext">View By:</p>
+                            <p class="textBox">Order By <i class="fas fa-caret-right"></i></p>
+                        </div>
+                        <div class="fieldsetBox">
+                            <p class="fieldtext">Sales From:</p>
+                            <p class="textBox">Last Year <i class="fas fa-caret-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row dataBlocks justify-content-between">
+                    <div class="col-3">
+                        <div class="boxIcon radius1">
+                            <div class="textBox">
+                                <h4>101.1 K</h4>
+                                <p class="text">Downloads</p>
+                                <p class="text"><span class="text-success">3% up</span> from last month</p>
+                            </div>
+                            <div class="iconBox"><i class="fas fa-download"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="boxIcon radius2">
+                            <div class="textBox">
+                                <h4>12.2 K</h4>
+                                <p class="text">Purchases</p>
+                                <p class="text"><span class="text-success">3% up</span> from last month</p>
+                            </div>
+                            <div class="iconBox"><i class="fas fa-store"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="boxIcon radius3">
+                            <div class="textBox">
+                                <h4>5.3 K</h4>
+                                <p class="text">Customers</p>
+                                <p class="text"><span class="text-success">3% up</span> from last month</p>
+                            </div>
+                            <div class="iconBox"><i class="fas fa-user-friends"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="boxIcon radius4">
+                            <div class="textBox">
+                                <h4>7</h4>
+                                <p class="text">Channels</p>
+                                <p class="text"><span class="text-success">3% up</span> from last month</p>
+                            </div>
+                            <div class="iconBox"><i class="fas fa-tv"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row graphs justify-content-around">
+                    <div class="col-8 firstBox">
+                        <div class="row">
+                            <div class="col-12 graphtext">
+                                <div class="row justify-content-between">
+                                    <div class="col-6">
+                                        <h3>Revenue Breakdown</h3>
+                                        <p class="text">Compared to previous year</p>
+                                    </div>
+                                    <div class="col-1 barIcon d-flex justify-content-between align-items-center">
+                                        <i class="fa fa-download"></i>
+                                        <i class="fa fa-print"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 leftText">
+                                <div class="col">
+                                    <p class="text">Actual Revenue</p>
+                                    <h3>$ 59,493</h3>
+                                </div>
+                                <div class="col">
+                                    <p class="text">Revenue Target</p>
+                                    <h4>$ 50,000</h4>
+                                </div>
+                                <div class="col">
+                                    <p class="text">Goal</p>
+                                    <h4 class="text-success">119%</h4>
+                                </div>
+                            </div>
+                            <div class="col-9 barGraph">
+                                <canvas id="myChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+                        <div class="row hov">
+                            <div class="col-12 d-flex justify-content-end">
+                                <p class="open">OPEN REPORT <i class="fas fa-angle-right"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-3 secondBox">
+                        <div class="row justify-content-between graphtext">
+                            <div class="col-6">
+                                <h3>Segments</h3>
+                                <p class="text">Revenus Sources</p>
+                            </div>
+                            <div class="col-1  d-flex justify-content-between align-items-center">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <canvas id="myChart1" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                        <div class="row hov">
+                            <div class="col-12 d-flex justify-content-end">
+                                <p class="open">OPEN REPORT <i class="fas fa-angle-right"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row banner justify-content-around">
+                    <div class="col-5 leftBox">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3>Privacy Suggestions</h3>
+                                <p class="text">Take your privacy checkup to choose which settings are right for you</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="download (1).svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 rightBox">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3>Account Storage</h3>
+                                <p class="text">Your account storage is shared across all devices</p>
+                                <div class="bar">
+                                    <div class="filledBar"></div>
+                                </div>
+                                <p class="text">10 GB of 30 GB used</p>
+                            </div>
+                            <div class="col-4">
+                                <div class="imgBox d-flex align-items-center justify-content-end">
+                                    <img src="download.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="orderTable">
+                    <div class="row firstRow justify-content-between">
+                        <div class="col-4">
+                            <h3>Orders</h3>
+                            <p class="text">Details and History</p>
+                        </div>
+                        <div class="col-1 barIcon d-flex justify-content-between align-items-center">
+                            <i class="fa fa-download"></i>
+                            <i class="fa fa-print"></i>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center  py-2">
+                        <div class="col-3 tableLegend d-flex justify-content-center align-items-center">
+                            <div class="box">10 &nbsp;<i class="fas fa-angle-down"></i></div>&nbsp; entries per page
+                        </div>
+                        <div class="col-3">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered">
+
+
+                    </table>
+
+
+                </div>
+
+                <div class="container-fluid footer d-flex align-items-center">
+                    <div class="row justify-content-between">
+                        <div class="col-3 text">Copyright &copy; Your Website 2021</div>
+                        <div class="col-3 text"><a href="#">Privacy Policy.  Terms & Conditions</a></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- <script>
+    var a = 0
+    $(document).ready(function(){
+        $(".fa-bars").click(function(){
+            if(a==0){
+                $(".main").removeClass("col-12").addClass("col-10")
+                a=1
+            }else if(a==1){
+                $(".main").removeClass("col-10").addClass("col-12")
+                a=0
+            }
+       
+        })
+    })
+</script> -->
+
+
+
+</body>
+
+</html>
